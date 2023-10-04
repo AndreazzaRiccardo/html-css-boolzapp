@@ -10,6 +10,13 @@
         max-width: 100%;
     }
 
+/* ROOT */
+
+    :root {
+        --btn-color:#B1B1B1;
+        --background-grey:#EAEAEA;
+    }
+
 /* COMMON */
 
     body {
@@ -36,26 +43,55 @@
 
     button {
         border: transparent;
-        color: #B1B1B1;
-        font-size: 3rem;
+        color: var(--btn-color);
+        font-size: 2.5rem;
         letter-spacing: 2rem;
+        background-color: transparent;
     }
 
 /* USER BOX */
 
     #user-box {
-        width: 30%;
+        width: calc(30% - 1px);
+        border-right: 1px solid var(--btn-color);
     }
 
     /* Header */
 
-    #user-box header {
-        background-color: #EAEAEA;
+    header {
+        background-color: var(--background-grey);
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 7rem;
         padding: 1rem;
+    }
+
+
+
+
+/* CHAT BOX */
+
+    #chat-box {
+        width: 70%;
+    }
+
+    /* Header */
+
+    .header-chat-box {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .last-access {
+        margin-left: 1rem;
+        line-height: 1.5;
+    }
+
+    .last-access p {
+        color: var(--btn-color);
+        font-size: 1.5rem;
     }
 
 
