@@ -15,6 +15,7 @@
     :root {
         --btn-color:#B1B1B1;
         --background-grey:#EAEAEA;
+        --text-color:#5579AB;
     }
 
 /* COMMON */
@@ -81,35 +82,67 @@
 
         /* Notice box */
 
-        .notice-box {
-            display: flex;
-            align-items: center;
-            background-color:#8EDAFC ;
-        }
+            .notice-box {
+                display: flex;
+                align-items: center;
+                background-color:#8EDAFC ;
+            }
 
-        .notice-icon {
-            background-color: white;
-            border-radius: 50%;
-            margin-right: 1.5rem;
-            height: 100%;
-            aspect-ratio: 1 / 1;
-            position: relative;
-        }
+            .notice-icon {
+                background-color: white;
+                border-radius: 50%;
+                margin-right: 1.5rem;
+                height: 100%;
+                aspect-ratio: 1 / 1;
+                position: relative;
+            }
 
 
-        .notice-icon i {
-            font-size: 2rem;
-            position: absolute;
-            color: #8EDAFC;
-            left:50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
+            .notice-icon i {
+                font-size: 2rem;
+                position: absolute;
+                color: #8EDAFC;
+                left:50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
 
-        .notice-text a {
-            color: #5579AB;
-            font-size: 1.2rem;
-        }
+            .notice-text a {
+                color: var(--text-color);
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+        /* Search box */
+
+            .search-box {
+                height: -50%;
+                padding: 0.5rem;
+                background-color: var(--background-grey);
+            }
+
+            .search-input {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                gap: 1rem;
+                background-color: white;
+                padding: 2%;
+                align-items: center;
+            }
+
+            .search-input i {
+                font-size: 1.5rem;
+                color: var(--btn-color);
+            }
+
+            .search-input input {
+                font-size: 1.5rem;
+                height: 100%;
+                width: 100%;
+                border: transparent;
+                color: var(--btn-color)
+            }
 
 
 
