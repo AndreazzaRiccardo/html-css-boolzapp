@@ -42,7 +42,7 @@
     button {
         border: transparent;
         color: var(--btn-color);
-        font-size: 2.5rem;
+        font-size: 2rem;
         letter-spacing: 2rem;
         background-color: transparent;
     }
@@ -137,6 +137,26 @@
     .right-box {
         height: 100%;
         width: 70%;
+    }
+
+    /* Header */
+
+    .right-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .last-access {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .last-access p {
+        color: var(--text-color);
+        line-height: 2rem;
     }
 
 
