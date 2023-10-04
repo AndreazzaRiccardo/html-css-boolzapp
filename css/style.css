@@ -71,6 +71,10 @@
 
     /* Header */
 
+    .left-box header {
+        height: 25vh;
+    }
+
     .setup {
         display: flex;
         justify-content: space-between;
@@ -130,6 +134,37 @@
         color: var(--btn-color);
     }
 
+    /* Main */
+
+    .left-box main {
+        height:calc(100vh - 25vh - 6%)
+    }
+
+    ul {
+        height: 100%;
+        list-style-type: none;
+        overflow-y: auto;
+    }
+
+    li {
+        display: flex;
+        gap: 1rem;
+        background-color: white;
+    }
+
+    .chat-card {
+        align-self: center;
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    .chat-card p {
+        color: var(--btn-color);
+    }
+
+
+
 
 
 /* RIGHT BOX */
@@ -158,6 +193,8 @@
         color: var(--text-color);
         line-height: 2rem;
     }
+
+    /* Main */
 
 
 
