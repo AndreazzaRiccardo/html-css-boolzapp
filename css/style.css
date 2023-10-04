@@ -16,6 +16,7 @@
         --btn-color:#B1B1B1;
         --background-grey:#EAEAEA;
         --text-color:#5579AB;
+        --light-blue:#8EDAFC;
     }
 
 /* COMMON */
@@ -38,11 +39,6 @@
         height: 100%;
     }
 
-    .chat-img {
-        border-radius: 50%;
-        max-height: 100%;
-    }
-
     button {
         border: transparent;
         color: var(--btn-color);
@@ -51,127 +47,97 @@
         background-color: transparent;
     }
 
-    main {
-        height: 100%;
+    header {
+        background-color: var(--background-grey);
+        height: 10vh;
     }
 
-    .card-size {
-        height:calc(100% / 10);
+    img {
+        border-radius: 50%;
+        max-height: 100%;
+    }
+
+    .card {
+        height: 10vh;
         padding: 1rem;
     }
 
-/* USER BOX */
+/* LEFT BOX */
 
-    #user-box {
-        width: calc(30% - 1px);
-        border-right: 1px solid var(--btn-color);
+    .left-box {
+        height: 100%;
+        width: 35%;
     }
 
     /* Header */
 
-    header {
-        background-color: var(--background-grey);
+    .setup {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-right: 1px solid var(--btn-color);
     }
 
-   
-
-    /* Main */
-
-        /* Notice box */
-
-            .notice-box {
-                display: flex;
-                align-items: center;
-                background-color:#8EDAFC ;
-            }
-
-            .notice-icon {
-                background-color: white;
-                border-radius: 50%;
-                margin-right: 1.5rem;
-                height: 100%;
-                aspect-ratio: 1 / 1;
-                position: relative;
-            }
-
-
-            .notice-icon i {
-                font-size: 2rem;
-                position: absolute;
-                color: #8EDAFC;
-                left:50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            .notice-text a {
-                color: var(--text-color);
-                font-weight: bold;
-                font-size: 1.2rem;
-            }
-
-        /* Search box */
-
-            .search-box {
-                height: -50%;
-                padding: 0.5rem;
-                background-color: var(--background-grey);
-            }
-
-            .search-input {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                gap: 1rem;
-                background-color: white;
-                padding: 2%;
-                align-items: center;
-            }
-
-            .search-input i {
-                font-size: 1.5rem;
-                color: var(--btn-color);
-            }
-
-            .search-input input {
-                font-size: 1.5rem;
-                height: 100%;
-                width: 100%;
-                border: transparent;
-                color: var(--btn-color)
-            }
-
-
-
-
-/* CHAT BOX */
-
-    #chat-box {
-        width: 70%;
+    .notice {
+        display: flex;
+        align-items: center;
+        background-color: var(--light-blue);
     }
 
-    /* Header */
+    .bell {
+        margin-right: 1rem;
+        height: 86px;
+        width: 86px;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+    }
 
-    .header-chat-box {
+    .bell i {
+        line-height: 86px;
+        font-size: 1.5rem;
+        color: var(--light-blue);
+    }
+
+    .text-notice a {
+        color: var(--text-color);
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        height: 5vh;
+        padding: 0.5rem;
+    }
+
+    .search-icon {
+        font-size: 1.5rem;
         height: 100%;
+        padding: 1% 3%;
+        color: var(--btn-color);
+        background-color: white;
         display: flex;
         align-items: center;
     }
 
-    .last-access {
-        margin-left: 1rem;
-        line-height: 1.5;
-    }
-
-    .last-access p {
+    .search input {
+        font-size: 1.2rem;
+        border: transparent;
+        padding-left: 1rem;
+        height: 100%;
+        width: 100%;
         color: var(--btn-color);
-        font-size: 1.5rem;
     }
 
 
+
+/* RIGHT BOX */
+
+    .right-box {
+        height: 100%;
+        width: 70%;
+    }
 
 
 
