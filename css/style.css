@@ -34,6 +34,7 @@
         width: 80%;
         margin: 0 auto;
         display: flex;
+        height: 100%;
     }
 
     .chat-img {
@@ -47,6 +48,15 @@
         font-size: 2.5rem;
         letter-spacing: 2rem;
         background-color: transparent;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    .card-size {
+        height:calc(100% / 10);
+        padding: 1rem;
     }
 
 /* USER BOX */
@@ -63,9 +73,43 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 7rem;
-        padding: 1rem;
     }
+
+   
+
+    /* Main */
+
+        /* Notice box */
+
+        .notice-box {
+            display: flex;
+            align-items: center;
+            background-color:#8EDAFC ;
+        }
+
+        .notice-icon {
+            background-color: white;
+            border-radius: 50%;
+            margin-right: 1.5rem;
+            height: 100%;
+            aspect-ratio: 1 / 1;
+            position: relative;
+        }
+
+
+        .notice-icon i {
+            font-size: 2rem;
+            position: absolute;
+            color: #8EDAFC;
+            left:50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .notice-text a {
+            color: #5579AB;
+            font-size: 1.2rem;
+        }
 
 
 
