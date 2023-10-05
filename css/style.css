@@ -51,7 +51,7 @@
     }
 
     button:hover {
-        filter: opacity(70%)
+        filter: opacity(70%);
     }
 
     header {
@@ -86,7 +86,7 @@
     }
 
     .left-box header {
-        height:calc(118px / 2 * 5)
+        height:calc(118px / 2 * 5);
     }
     
     .setup {
@@ -159,6 +159,10 @@
         overflow-y: scroll;
     }
 
+    ul:first-child {
+        border-top: 1px solid var(--btn-color);
+    }
+
     li {
         display: flex;
         gap: 1rem;
@@ -181,11 +185,6 @@
     .chat-card p {
         color: var(--btn-color);
     }
-
-    .img-chat {
-        aspect-ratio: 1/1;
-    }
-
 
 
 
@@ -241,16 +240,17 @@
         align-items: center;
         justify-content: space-between;
         padding: 1rem 2rem;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .sent {
         background-color:var(--sent-message);
         border-radius: 10px;
-        padding: 1rem;
-        width: 60%;
+        padding: 2%;
+        width: 70%;
         align-self: flex-end;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        border-top-right-radius: 0px;
     }
 
     .message {
@@ -274,10 +274,11 @@
     .received {
         background-color:white;
         border-radius: 10px;
-        padding: 1rem;
-        width: 60%;
+        padding: 2%;
+        width: 70%;
         align-self: flex-start;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        border-top-left-radius: 0;
     }
 
     .text-send {
@@ -326,7 +327,43 @@
     .trigger:hover .fa-solid {
         rotate: 180deg;
     }
-    
+
+    .microphone {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+    }
+
+    .microphone:active {
+        animation-name: click;
+        animation-duration:1.5s;
+        animation-iteration-count:infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes click {
+        20% {
+            color: var(--light-blue);
+            border: 10px double var(--light-blue);
+        }
+
+        40%{
+            border: 15px double;
+            font-size: 1.6rem;
+        }
+
+        60% {
+            
+            border: 20px double;
+            font-size: 1.4rem;
+        }
+
+        80% {
+            border: 15px double;
+            font-size: 1.6rem;
+        }
+    }
 
     
 

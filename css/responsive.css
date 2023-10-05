@@ -1,22 +1,28 @@
 /* DARK MODE MEDIAQUERY */
 
 @media (prefers-color-scheme: dark) {
+
+    :root {
+        --dark-grey :rgb(49, 55, 61);
+        --light-grey:rgb(81, 90, 100);
+    }
+
     #wrapper {
         background: linear-gradient(rgba(0, 0, 0, 0.829) 15%, rgba(0, 0, 0, 0.736) 10%); 
     }
 
     li {
-        background-color:rgb(49, 55, 61);
+        background-color:var(--dark-grey);
         color: white;
     }
 
     header {
-        background-color: rgb(49, 55, 61);
+        background-color: var(--dark-grey);
         color: white;
     }
 
     .notice {
-        background-color: rgb(81, 90, 100);
+        background-color: var(--light-grey);
     }
 
     .notice a {
@@ -24,15 +30,15 @@
     }
 
     .message-input {
-        background-color: rgb(81, 90, 100);
+        background-color: var(--light-grey);
     }
 
     .chat-box {
-        filter:invert()
+        filter:invert();
     }
 
     .left-box {
-        background-color: rgb(81, 90, 100);
+        background-color: var(--light-grey);
     }
 
     .received {
@@ -45,7 +51,14 @@
         filter: invert();
     }
 
+    ul::-webkit-scrollbar {
+        filter: invert();
+    }
 
+    ul::-webkit-scrollbar-thumb {
+        background-color: var(--dark-grey);
+    }
+}
 
 /* MEDIAQUERY FOR TABLET */
 
@@ -92,7 +105,6 @@
 
     .left-box main {
         height:calc(100% - 118px);
-        overflow-y: scroll;
     }
 
 }
@@ -120,6 +132,7 @@
         font-size: 0.8rem;
         line-height: 0;
     }
+    
     .right-box main {
         height:calc(100% - 118px);
     }
@@ -147,5 +160,4 @@
     .last-access div {
         margin-top: 1rem;
     }
-
 }
