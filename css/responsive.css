@@ -27,22 +27,24 @@
         background-color: rgb(81, 90, 100);
     }
 
-    .sent {
-        background-color: rgb(126, 110, 147);
-    }
-
     .chat-box {
-        filter:invert();
-    }
-
-    .message-option {
-        background-color: rgb(226, 231, 236);
+        filter:invert()
     }
 
     .left-box {
         background-color: rgb(81, 90, 100);
     }
-}
+
+    .received {
+        filter: invert();
+    }
+
+    .sent {
+        color: white;
+        background-color: #085E55;
+        filter: invert();
+    }
+
 
 
 /* MEDIAQUERY FOR TABLET */
