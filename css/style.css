@@ -90,17 +90,17 @@
     }
 
     .bell {
+        height: 80px;
         margin-right: 1rem;
-        height: 86px;
-        width: 86px;
         background-color: white;
         border-radius: 50%;
         text-align: center;
         vertical-align: middle;
+        aspect-ratio: 1/1;
     }
 
     .bell i {
-        line-height: 86px;
+        line-height: 80px;
         font-size: 1.5rem;
         color: var(--light-blue);
     }
@@ -234,12 +234,14 @@
 
     .message {
         display: flex;
+        position: relative;
     }
 
     .menu-message {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         color: var(--btn-color);
     }
 
@@ -274,6 +276,28 @@
         padding-left: 1.5rem;
         border-radius: 10px;
     }
+
+    .message-option button {
+        color: black;
+        font-size: 1rem;
+        letter-spacing: 0;
+        padding: 0.8rem;
+    }
+
+    .message-option {
+        box-shadow: 1px 1px 4px black;
+        background-color: white;
+        position: absolute;
+        flex-direction: column;
+        right: 3%;
+        bottom: 1%;
+        display: none;
+    }
+
+    .trigger:hover .message-option {
+        display: flex;
+    }
+    
 
     
 
