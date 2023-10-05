@@ -1,8 +1,7 @@
-@media screen and (max-width:1217px) {
+/* MEDIAQUERY FOR TABLET */
+
+@media screen and (max-width:991px) {
     
-    #wrapper {
-        padding: 0;
-    }
     .container {
         height: 100vh;
         width: 100%;
@@ -28,10 +27,6 @@
         display: none;
     }
 
-    .left-box {
-        width: auto
-    }
-
     .right-box {
         width: 100%;
     }
@@ -41,19 +36,22 @@
     }
 
     .left-box {
-        height: 100%
+        height: 100%;
+        width: auto;
+        flex-shrink: 0;
     }
 
     .left-box main {
-        height: 100%;
+        height:90vh;
+        overflow-y: scroll;
     }
 
 }
 
 
+/* MEDIAQUERY FOR MOBILE */
 
-
-@media screen and (max-width:703px) {
+@media screen and (max-width:540px) {
     
     .right-box {
         height: 100vh;
