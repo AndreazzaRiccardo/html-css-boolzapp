@@ -76,6 +76,7 @@
         width: 450px;
         border-right: 1px solid var(--btn-color);
         flex-shrink: 0;
+        background-color: white;
     }
 
     /* Header */
