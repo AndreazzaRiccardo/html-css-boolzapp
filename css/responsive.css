@@ -132,10 +132,18 @@
         display: none;
     }
 
+    ul::-webkit-scrollbar {
+        width: 0;
+    }
+
     /* RIGHT BOX */
 
     .right-box {
         width: 100%;
+    }
+
+    .chat-box::-webkit-scrollbar{
+        width: 0;
     }
 
     .right-box main {
