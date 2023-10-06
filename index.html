@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="./css/responsive.css">
 
 </head>
-<body> 
+
+<body>
 
     <!-- Wrapper -->
     <div id="wrapper">
@@ -31,12 +32,15 @@
 
             <!-- Left box -->
             <div class="left-box">
-            
+
                 <header>
 
                     <div class="setup card">
-                        <img src="img/avatar_io.jpg" alt="My avatar">
-                        <div>
+                        <div class="avatar-img">
+                            <img src="img/avatar_io.jpg" alt="My avatar">
+                            <h1>Sofia</h1>
+                        </div>
+                        <div class="avatar-btn">
                             <button>
                                 <i class="fa-solid fa-circle-notch"></i>
                             </button>
@@ -60,20 +64,21 @@
                     </div>
 
                     <div class="search">
-                        <div class="search-icon">
+                        <label for="search-bar" class="search-icon">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        </label>
+                        <input id="search-bar" type="search" placeholder="Cerca o inizia una nuova chat">
                     </div>
 
                 </header>
 
                 <main>
 
+                    <!-- Contact list -->
                     <ul>
 
                         <li class="card">
-                            
+
                             <div class="img-chat">
                                 <img src="img/avatar_1.jpg" alt="">
                             </div>
@@ -84,7 +89,7 @@
                                 </div>
                                 <p>16:15</p>
                             </div>
-                            
+
                         </li>
 
                         <li class="card">
@@ -99,7 +104,7 @@
                                 </div>
                                 <p>16:05</p>
                             </div>
-                            
+
                         </li>
 
                         <li class="card">
@@ -114,7 +119,7 @@
                                 </div>
                                 <p>16:03</p>
                             </div>
-                            
+
                         </li>
 
                         <li class="card">
@@ -129,7 +134,7 @@
                                 </div>
                                 <p>15:50</p>
                             </div>
-                            
+
                         </li>
 
                         <li class="card">
@@ -144,7 +149,7 @@
                                 </div>
                                 <p>15:45</p>
                             </div>
-                            
+
                         </li>
 
                         <li class="card">
@@ -159,7 +164,7 @@
                                 </div>
                                 <p>15:40</p>
                             </div>
-                            
+
                         </li>
 
                         <li class="card">
@@ -174,7 +179,7 @@
                                 </div>
                                 <p>15:22</p>
                             </div>
-                            
+
                         </li>
 
                         <li class="card">
@@ -189,7 +194,7 @@
                                 </div>
                                 <p>15:15</p>
                             </div>
-                            
+
                         </li>
 
                         <li class="card">
@@ -204,7 +209,7 @@
                                 </div>
                                 <p>15:15</p>
                             </div>
-                            
+
                         </li>
 
                         <li class="card">
@@ -219,13 +224,14 @@
                                 </div>
                                 <p>15:15</p>
                             </div>
-                            
+
                         </li>
 
                     </ul>
+                    <!-- /Contact list -->
 
                 </main>
-            
+
             </div>
             <!-- /Left box -->
 
@@ -257,7 +263,8 @@
                 </header>
 
                 <main>
-                    
+
+                    <!-- Chat box -->
                     <div class="chat-box">
 
                         <div class="sent">
@@ -265,6 +272,74 @@
                                 <div class="text-message">
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam architecto optio consequuntur ullam dolor modi deserunt officia fuga sint delectus eius placeat, qui culpa, temporibus id doloribus eum nisi ea?
                                     Repellendus magnam ratione quis ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum molestias quidem delectus enim suscipit. Dolor fuga ducimus veniam tenetur corrupti voluptatum rerum, fugiat laudantium optio dicta repudiandae quae velit? </p>
+                                </div>
+                                <div class="menu-message">
+                                    <div class="trigger">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <div class="message-option">
+                                            <button>
+                                                Info messaggio
+                                            </button>
+                                            <button>
+                                                Cancella messaggio
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p>16:13</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sent">
+                            <div class="message">
+                                <div class="text-message">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam architecto optio consequuntur ullam dolor modi deserunt officia fuga sint delectus eius placeat, qui culpa, temporibus id doloribus eum nisi ea?
+                                    </p>
+                                </div>
+                                <div class="menu-message">
+                                    <div class="trigger">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <div class="message-option">
+                                            <button>
+                                                Info messaggio
+                                            </button>
+                                            <button>
+                                                Cancella messaggio
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p>16:13</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="received">
+                            <div class="message">
+                                <div class="text-message">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam architecto optio consequuntur ullam dolor modi deserunt officia fuga sint delectus eius placeat, qui culpa, temporibus id doloribus eum nisi ea?
+                                    Repellendus magnam ratione quis ex?</p>
+                                </div>
+                                <div class="menu-message">
+                                    <div class="trigger">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <div class="message-option">
+                                            <button>
+                                                Info messaggio
+                                            </button>
+                                            <button>
+                                                Cancella messaggio
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p>16:13</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sent">
+                            <div class="message">
+                                <div class="text-message">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                 </div>
                                 <div class="menu-message">
                                     <div class="trigger">
@@ -306,30 +381,55 @@
                             </div>
                         </div>
 
-                    </div>
+                        <div class="sent">
+                            <div class="message">
+                                <div class="text-message">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis? Perspiciatis, repellat facere, quis recusandae hic ullam vero doloremque a eveniet vel cumque quos similique vitae culpa non ipsa ut.</p>
+                                </div>
+                                <div class="menu-message">
+                                    <div class="trigger">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <div class="message-option">
+                                            <button>
+                                                Info messaggio
+                                            </button>
+                                            <button>
+                                                Cancella messaggio
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p>16:13</p>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                    <!-- /Chat box -->
+
+                    <!-- Message input -->
                     <div class="message-input">
 
                         <button>
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
-                        <div class="text-send">
-                            <input type="text" placeholder="Scrivi un messaggio">
-                        </div>
+                        <label for="input-text-message" class="text-send">
+                            <input id="input-text-message" type="text" placeholder="Scrivi un messaggio">
+                        </label>
                         <button class="microphone">
                             <i class="fa-solid fa-microphone"></i>
                         </button>
 
                     </div>
+                    <!-- /Message input -->
 
                 </main>
 
             </div>
             <!-- /Right box -->
-            
+
         </div>
         <!-- /Container -->
-    
+
     </div>
     <!-- /Wrapper -->
 
